@@ -44,6 +44,12 @@ npm start -- examples/sessions.csv --weekly-goal 300 --json
 npm start -- --help
 ```
 
+For a JSON file without npm's command banner, run the compiled CLI directly:
+
+```bash
+node dist/cli.js examples/sessions.csv --json > report.json
+```
+
 ## Input format
 
 The required headers are `date,course,minutes,focus`. The `notes` header is optional. Columns can be reordered. Duplicate and unknown headers are rejected.
