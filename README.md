@@ -6,6 +6,23 @@ I made a small command-line tool to analyse study sessions. The input is a CSV f
 
 Use Node.js 24 and npm 11. The build was checked with Node.js 24.22.1 and npm 11.6.2. No API key or external service is needed to run the program. The example data is invented.
 
+On macOS with Homebrew, Node.js 24 can be installed with:
+
+```bash
+brew install node@24
+export PATH="$(brew --prefix node@24)/bin:$PATH"
+node --version
+npm --version
+```
+
+If npm is not version 11, install the version used for this project:
+
+```bash
+npm install --global npm@11.6.2
+```
+
+The PATH command applies to the current terminal session. On other systems, install Node.js 24 using the official Node.js instructions, then check the npm version before starting.
+
 ## Install, build and run
 
 ```bash
